@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins"],
+       raleway: ["Raleway"]
+      },
+      screens: {
+        tablets: "767px",
+        mobile: "639px",
+      }
+    },
   },
   plugins: [],
 }
