@@ -12,35 +12,37 @@
   </head>
   <body class="font-poppins">
     <!-- Navbar -->
-     <div class="flex  w-full py-2 bg-gray-200
-     bg-opacity-30 rounded-lg shadow-xl  backdrop-blur-md justify-between items-center">
+     <div class="flex w-full py-2 bg-gray-200
+     bg-opacity-30 rounded-lg shadow-xl  backdrop-blur-md justify-between items-center fixed max-tablets:w-full">
       <div class="flex mx-20 text-4xl font-extrabold bg-gradient-to-r from-red-500 to-red-200 bg-clip-text text-transparent font-raleway italic"><a href="#home">Ferrari</a></div>
-      <div class="container max-tablets:hidden flex justify-end mx-36">
-        <nav class="flex justify-end items-center gap-10 text-lg font-semibold ">
+        <nav class="flex justify-end items-center text-lg font-semibold">
+          <div class="container flex justify-end items-center mx-36 gap-10 nav-items max-tablets:absolute max-tablets:top-full  max-tablets:w-full max-tablets:right-full max-tablets:bg-white max-tablets:h-screen max-tablets:block max-tablets:">
           <a class="text-red-500 hover:text-red-400" href="#gallery">Gallery</a>
               <a class="hover:text-red-400" href="#details">Model</a>
              <a class="hover:text-red-400" href="#features">Features</a>
+                       </div>
         </nav>
-      </div>
-      <!-- Hamburger Menu -->
-      <div class="mx-12 hidden max-tablets:block">
+        <!-- Hamburger Menu -->
+         <div id="hamburger-menu" class="mx-12 hidden max-tablets:flex max-tablets:cursor-pointer ">
+          <button>
        <i data-feather="menu"></i>
-    </div>
+       </button>
+      </div>
      </div>
      <!-- End Navbar -->
 
      <!-- Hero Section -->
-      <section class="container flex items-center h-screen">
+      <section class="container flex items-center h-screen max-mobile:flex-wrap">
         <div class="flex mx-auto">
-          <h1 class="text-4xl mx-12">Join the Elite. Drive a <span class="italic bg-gradient-to-r from-red-500 to-red-300 bg-clip-text text-transparent font-semibold">Ferrari</span> and Embrace the Art of Performance.</h1>
+          <h1 class="text-4xl mx-12 max-mobile:text-md max-mobile:h-5/6">Join the Elite. Drive a <span class="italic bg-gradient-to-r from-red-500 to-red-300 bg-clip-text text-transparent font-semibold">Ferrari</span> and Embrace the Art of Performance.</h1>
         </div>
-        <div class="w-full">
+        <div class="flex justify-center items-center w-full max-mobile:w-full max-mobile:flex max-mobile:mx-auto">
           <img src="/assets/Img/Img-Hero-Section/1.webp" alt="Ferrari Car">
         </div>
       </section>
      <!-- End Hero Section -->
       <!-- Main JS -->
-    <script type="module" src="/src/js/app.js"></script>
+    <script type="module" src="./src/js/app.js"></script>
     <!-- Feather Icons -->
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   <script>
