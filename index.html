@@ -14,16 +14,16 @@
     <!-- Navbar -->
      <div class="flex w-full py-2 bg-gray-200
      bg-opacity-30 rounded-lg shadow-xl  backdrop-blur-md justify-between items-center fixed max-tablets:w-full">
-      <div class="flex mx-20 text-4xl font-extrabold bg-gradient-to-r from-red-500 to-red-200 bg-clip-text text-transparent font-raleway italic"><a href="#home">Ferrari</a></div>
-        <nav class="flex justify-end items-center text-lg font-semibold">
-          <div class="container flex justify-end items-center mx-36 gap-10 nav-items max-tablets:absolute max-tablets:top-full  max-tablets:w-full max-tablets:right-full max-tablets:bg-white max-tablets:h-screen max-tablets:block max-tablets:">
+      <div class="flex mx-20 text-4xl font-extrabold bg-gradient-to-r from-red-500 to-red-200 bg-clip-text text-transparent font-raleway italic max-mobile:mx-5"><a href="#home">Ferrari</a></div>
+        <nav class="text-lg font-semibold md:flex md:justify-end md:items-center">
+          <div class="md:container md:flex md:justify-end md:items-center md:static md:mx-36 md:gap-10 max-mobile:flex max-mobile:flex-col top-full max-mobile:h-screen w-52 -right-full  max-mobile:bg-white/85 absolute p-[1rem] max-mobile:gap-10 nav-items transition-all ease-in-out duration-200 delay-150">
           <a class="text-red-500 hover:text-red-400" href="#gallery">Gallery</a>
               <a class="hover:text-red-400" href="#details">Model</a>
              <a class="hover:text-red-400" href="#features">Features</a>
                        </div>
         </nav>
         <!-- Hamburger Menu -->
-         <div id="hamburger-menu" class="mx-12 hidden max-tablets:flex max-tablets:cursor-pointer ">
+         <div id="hamburger-menu" class="mx-12 hidden max-tablets:block max-tablets:cursor-pointer">
           <button>
        <i data-feather="menu"></i>
        </button>
@@ -32,9 +32,9 @@
      <!-- End Navbar -->
 
      <!-- Hero Section -->
-      <section class="container flex items-center h-screen max-mobile:flex-wrap">
+      <section class="container h-screen flex items-center max-mobile:flex-wrap max-mobile:min-h-screen">
         <div class="flex mx-auto">
-          <h1 class="text-4xl mx-12 max-mobile:text-md max-mobile:h-5/6">Join the Elite. Drive a <span class="italic bg-gradient-to-r from-red-500 to-red-300 bg-clip-text text-transparent font-semibold">Ferrari</span> and Embrace the Art of Performance.</h1>
+          <h1 class="text-4xl mx-12 max-mobile:text-3xl max-mobile:h-full max-mobile:mt-28">Join the Elite. Drive a <span class="italic bg-gradient-to-r from-red-500 to-red-300 bg-clip-text text-transparent font-semibold">Ferrari</span> and Embrace the Art of Performance.</h1>
         </div>
         <div class="flex justify-center items-center w-full max-mobile:w-full max-mobile:flex max-mobile:mx-auto">
           <img src="/assets/Img/Img-Hero-Section/1.webp" alt="Ferrari Car">
