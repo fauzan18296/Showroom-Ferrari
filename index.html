@@ -12,7 +12,7 @@
   </head>
   <body class="font-poppins">
     <!-- Navbar -->
-     <div class="flex w-full py-2 bg-gray-200
+     <div class="navigasi flex w-full py-2 bg-gray-200
      bg-opacity-20 rounded-lg shadow-xl  backdrop-blur-lg justify-between items-center fixed max-tablets:w-full">
       <div class="flex mx-20 text-4xl font-extrabold bg-gradient-to-r from-red-500 to-red-200 bg-clip-text text-transparent font-raleway italic max-mobile:mx-5"><a href="#home">Ferrari</a></div>
         <nav class="text-lg font-semibold md:flex md:justify-end md:items-center">
@@ -33,8 +33,8 @@
 
      <!-- Hero Section -->
       <section class="container min-h-screen flex items-center max-mobile:flex-wrap max-mobile:min-h-screen">
-        <div class="flex mx-auto">
-          <h1 class="text-4xl mx-12 max-mobile:text-3xl max-mobile:h-full max-mobile:mt-28"><span class="text-1">Join the Elite. Drive a</span> <span class="italic bg-gradient-to-r from-red-500 to-red-300 bg-clip-text text-transparent font-semibold">Ferrari</span> and Embrace the Art of Performance.</h1>
+        <div  id="hero-text" class="flex mx-auto">
+          <h1 class="text-4xl mx-12 max-mobile:text-3xl max-mobile:h-full max-mobile:mt-28"><span >Join the Elite. Drive a</span> <span class="italic bg-gradient-to-r from-red-500 to-red-300 bg-clip-text text-transparent font-semibold">Ferrari</span> and Embrace the Art of Performance.</h1>
         </div>
         <div class="flex justify-center items-center w-full max-mobile:w-full max-mobile:flex max-mobile:mx-auto">
           <img src="/assets/Img/Img-Hero-Section/1.webp" alt="Ferrari Car">
@@ -49,25 +49,32 @@
           <div class="bg-gradient-to-br from-red-500 via-red-300 to-red-200 p-12 gap-10 rounded-md grid grid-cols-3 max-mobile:grid-cols-2 max-mobile:w-full  max-mobile:mx-auto max-mobile:columns-2 max-mobile:px-2 ">
           <div class="bg-white rounded-md ">
             <figure class="flex flex-col">
-            <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/1.jpg" alt="Ferrari Callifornia">
+            <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/1.webp" alt="Ferrari Callifornia">
             <div class="mx-4 my-1 text-md font-semibold flex flex-col flex-nowrap max-mobile:flex-wrap max-mobile:text-sm max-mobile:mx-1">
-            <figcaption>Name: Ferrari California T</figcaption>
-            <figcaption>Years: 2014 - 2017</figcaption>
-            <figcaption>Price: $202,000 - $240,000</figcaption>
+            <figcaption>Name: Ferrari 458 Spider</figcaption>
+            <figcaption>Years: 2009-2015</figcaption>
+            <figcaption>Price: $248.037</figcaption>
             </div>
             </figure>
           </div>
-          <div class="">
-            <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/1.jpg" alt="Ferrari Callifornia">
+          <div class="bg-white rounded-md ">
+            <figure class="flex flex-col"> 
+              <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/2.webp" alt="Ferrari Callifornia">
+              <div class="mx-4 my-1 text-md font-semibold flex flex-col flex-nowrap max-mobile:flex-wrap max-mobile:text-sm max-mobile:mx-1">
+                      <figcaption>Name: Ferrari F40</figcaption>
+                      <figcaption>Years: 1987–1992</figcaption>
+                      <figcaption>Price: <a href="">Contact</a></figcaption>
+              </div>
+            </figure>
           </div>
           <div class="">
-            <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/1.jpg" alt="Ferrari Callifornia">
+            <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/3.jpg" alt="Ferrari Callifornia">
           </div>
           <div class="">
-            <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/1.jpg" alt="Ferrari Callifornia">
+            <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/3.webp" alt="Ferrari Callifornia">
           </div>
           <div class="">
-            <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/1.jpg" alt="Ferrari Callifornia">
+            <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/3.webp" alt="Ferrari Callifornia">
           </div>
           </div>
         </div>
@@ -88,5 +95,16 @@
     <script>
       feather.replace();
     </script>
+
+    <!-- Gsap Animation -->
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+     <script>
+       gsap.from(".navigasi", {
+    duration: 2.5,
+    ease: "bounce",
+    opacity: 0,
+    y: "-100%"
+  })
+     </script>
   </body>
 </html>
