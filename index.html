@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="scroll-smooth" lang="en">
+<html lang="en" class=" scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/icon/web/ferrari.webp" />
@@ -16,7 +16,7 @@
      bg-opacity-20 rounded-lg shadow-xl  backdrop-blur-lg justify-between items-center fixed max-tablets:w-full">
       <div class="flex mx-20 text-4xl font-extrabold bg-gradient-to-r from-red-500 to-red-200 bg-clip-text text-transparent font-raleway italic max-mobile:mx-5"><a href="#home">Ferrari</a></div>
         <nav class="text-lg font-semibold md:flex md:justify-end md:items-center">
-          <div class="md:container md:flex md:justify-end md:items-center md:static md:mx-36 md:gap-10 max-mobile:flex max-mobile:flex-col top-full max-mobile:h-screen w-full -right-full  max-mobile:bg-white/85 absolute p-[1rem] max-mobile:gap-10 nav-items transition ease-in-out duration-500 delay-200">
+          <div class="md:container md:flex md:justify-end md:items-center md:static md:mx-36 md:gap-10 max-mobile:flex max-mobile:flex-col top-full max-mobile:h-screen w-full -right-full  max-mobile:bg-white/85 absolute p-[1rem] max-mobile:gap-10 nav-items transition ease-in-out duration-300 delay-200">
           <a class="text-red-500 hover:text-red-400" href="#gallery">Gallery</a>
               <a class="hover:text-red-400" href="#details">Model</a>
              <a class="hover:text-red-400" href="#features">Features</a>
@@ -24,18 +24,18 @@
         </nav>
         <!-- Hamburger Menu -->
          <div id="hamburger-menu" class="mx-12 hidden max-tablets:block max-tablets:cursor-pointer">
-          <button>
+          <a href="#">
        <i data-feather="menu"></i>
-       </button>
+       </a>
       </div>
      </div>
      <!-- End Navbar -->
 
      <!-- Hero Section -->
-      <section class="min-h-screen flex items-center ax-mobile:min-h-screen">
+      <section class="min-h-screen flex justify-center items-center w-full max-mobile:min-h-screen">
         <div class="container flex justify-center items-center max-mobile:flex-wrap">
-        <div  id="hero-text" class="flex mx-auto">
-          <h1 class="text-4xl mx-12 max-mobile:text-3xl max-mobile:h-full max-mobile:mt-28"><span >Join the Elite. Drive a</span> <span class="italic bg-gradient-to-r from-red-500 to-red-300 bg-clip-text text-transparent font-semibold">Ferrari</span> and Embrace the Art of Performance.</h1>
+        <div class="flex mx-auto">
+          <h1 class="text-4xl mx-12 max-mobile:text-3xl max-mobile:h-full max-mobile:mt-28">Join the Elite. Drive a <span class="italic bg-gradient-to-r from-red-500 to-red-300 bg-clip-text text-transparent font-semibold">Ferrari</span> and Embrace the Art of Performance.</h1>
         </div>
         <div class="flex justify-center items-center w-full max-mobile:w-full max-mobile:flex max-mobile:mx-auto">
           <img src="/assets/Img/Img-Hero-Section/1.webp" alt="Ferrari Car">
@@ -45,26 +45,27 @@
      <!-- End Hero Section -->
 
      <!-- Gallery Section -->
-      <section id="gallery" class="flex items-center min-h-screen flex-col mx-auto w-full">
+      <section id="gallery" class="flex justify-center items-center min-h-screen flex-col mx-auto w-full">
          <h1 class="text-center text-5xl bg-gradient-to-r from-red-500 to-red-300 text-transparent bg-clip-text font-semibold mb-9">Gallery</h1>
-        <div class="container flex justify-center items-center  px-4 rounded-md ">
+        <div class="container flex justify-center items-center  px-4 rounded-md">
           <div class="bg-gradient-to-br from-red-500 via-red-300 to-red-200 p-12 gap-10 rounded-md grid grid-cols-3 max-mobile:grid-cols-2 max-mobile:w-full  max-mobile:mx-auto max-mobile:columns-2 max-mobile:px-2">
-          <div class="bg-white rounded-md transition-all duration-500 delay-300 ease-in hover:scale-105">
+          <div class="bg-white rounded-md ">
             <figure class="flex flex-col ">
-            <img class="rounded-md w-full transition-all duration-500 delay-300 ease-out hover:scale-110" src="/assets/Img/Img-Product-Ferrari/1.webp" alt="Ferrari Callifornia">
+            <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/1.webp" alt="Ferrari Callifornia">
             <div class="mx-4 my-1 text-md font-semibold flex flex-col flex-nowrap max-mobile:flex-wrap max-mobile:text-sm max-mobile:mx-1">
             <figcaption>Name: Ferrari 458 Spider</figcaption>
             <figcaption>Years: 2009-2015</figcaption>
             <figcaption>Price: $248.037</figcaption>
-            </figure>
           </div>
-          <div class="bg-white rounded-md transition-all duration-500 delay-300 ease-in hover:scale-105">
+            </figure>
+            </div>
+          <div class="bg-white rounded-md">
             <figure class="flex flex-col"> 
-              <img class="rounded-md w-full transition-all duration-500 delay-300 ease-out hover:scale-110" src="/assets/Img/Img-Product-Ferrari/2.webp" alt="Ferrari Callifornia">
+              <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/2.webp" alt="Ferrari Callifornia">
               <div class="mx-4 my-1 text-md font-semibold flex flex-col flex-nowrap max-mobile:flex-wrap max-mobile:text-sm max-mobile:mx-1">
                       <figcaption>Name: Ferrari F40</figcaption>
                       <figcaption>Years: 1987-1992</figcaption>
-                      <figcaption>Price: <a href="">Contact</a></figcaption>
+                      <figcaption>Price: <a href="/">Contact</a></figcaption>
               </div>
             </figure>
           </div>

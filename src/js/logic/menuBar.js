@@ -2,11 +2,11 @@ export default function setupMenu() {
     const navItems = document.querySelector(".nav-items");
     const menuButton = document.querySelector("#hamburger-menu");
 
-    menuButton.onclick = () => {
+    menuButton.addEventListener("click", () => {
          navItems.classList.toggle("-right-full");
-    }
+    })
 
-    document.addEventListener("click", function(e)  {
+    document.addEventListener("click", (e) =>  {
         if (!menuButton.contains(e.target) && !navItems.contains(e.target)) {
             navItems.classList.remove("right-0");
         }
