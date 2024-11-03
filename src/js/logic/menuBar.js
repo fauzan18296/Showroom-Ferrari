@@ -1,15 +1,14 @@
-export default function setupMenu() {
+export function setupMenu() {
+    const menuButton = document.getElementById("hamburger-menu");
     const navItems = document.querySelector(".nav-items");
-    const menuButton = document.querySelector("#hamburger-menu");
 
     menuButton.addEventListener("click", () => {
-         navItems.classList.toggle("-right-full");
-    })
+        navItems.classList.toggle("-right-full");
+    });
 
-    document.addEventListener("click", (e) =>  {
-        if (!menuButton.contains(e.target) && !navItems.contains(e.target)) {
+    document.addEventListener("click", (e) => {
+        if (!menuButton.contains(e.currentTarget) && !navItems.contains(e.currentTarget)) {
             navItems.classList.remove("right-0");
         }
-        e.preventDefault()
     });
 }
