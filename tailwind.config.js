@@ -15,7 +15,6 @@ export default {
         mobile: "640px",
         desktop: "1400px"
       },
-      behavior: ['smooth'],
     },
   },
   plugins: [],
