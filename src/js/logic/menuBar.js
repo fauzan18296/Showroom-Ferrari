@@ -7,9 +7,8 @@ export function setupMenu() {
     });
 
     document.addEventListener("click", (e) => {
-        if (!menuButton.contains(e.target) && !navItems.contains(e.target)) {
+        if (!menuButton.contains(e.currentTarget) && !navItems.contains(e.currentTarget)) {
             navItems.classList.remove("right-0");
         }
-        e.preventDefault();
     });
 }

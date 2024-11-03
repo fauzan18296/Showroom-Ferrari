@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/icon/web/ferrari.jpg" />
+    <link rel="icon" type="image/svg+xml" href="/icon/web/ferrari.webp" />
     <!-- Font Family -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ferrari Indonesia</title>
   </head>
-  <body class="font-poppins">
+  <body id="home"  class="font-poppins">
     <!-- Navbar -->
      <div class="navigasi flex w-full py-2 bg-gray-200
      bg-opacity-20 rounded-lg shadow-xl  backdrop-blur-lg justify-between items-center fixed max-tablets:w-full">
@@ -32,12 +32,14 @@
      <!-- End Navbar -->
 
      <!-- Hero Section -->
-      <section id="home" class="container min-h-screen flex items-center max-mobile:flex-wrap max-mobile:min-h-screen">
+      <section class="min-h-screen flex items-center ax-mobile:min-h-screen">
+        <div class="container flex justify-center items-center max-mobile:flex-wrap">
         <div  id="hero-text" class="flex mx-auto">
           <h1 class="text-4xl mx-12 max-mobile:text-3xl max-mobile:h-full max-mobile:mt-28"><span >Join the Elite. Drive a</span> <span class="italic bg-gradient-to-r from-red-500 to-red-300 bg-clip-text text-transparent font-semibold">Ferrari</span> and Embrace the Art of Performance.</h1>
         </div>
         <div class="flex justify-center items-center w-full max-mobile:w-full max-mobile:flex max-mobile:mx-auto">
           <img src="/assets/Img/Img-Hero-Section/1.webp" alt="Ferrari Car">
+        </div>
         </div>
       </section>
      <!-- End Hero Section -->
@@ -89,7 +91,7 @@
 
 
       <!-- Main JS -->
-    <script type="module" src="./src/js/app.js"></script>
+    <script type="module" src="/src/js/app.js"></script>
     <!-- Feather Icons -->
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script>
