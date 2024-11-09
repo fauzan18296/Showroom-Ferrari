@@ -13,7 +13,7 @@
   <body id="home"  class="font-poppins">
     <!-- Navbar -->
      <div class="navigasi flex w-full py-2 bg-gray-200
-     bg-opacity-20 rounded-lg shadow-xl  backdrop-blur-lg justify-between items-center fixed max-tablets:w-full">
+     bg-opacity-20 rounded-lg shadow-xl  backdrop-blur-lg justify-between items-center fixed max-tablets:w-full z-50">
       <div class="flex mx-20 text-4xl font-extrabold bg-gradient-to-r from-red-500 to-red-200 bg-clip-text text-transparent font-raleway italic max-mobile:mx-5"><a href="#home">Ferrari</a></div>
         <nav class="text-lg font-semibold md:flex md:justify-end md:items-center">
           <div class="md:container md:flex md:justify-end md:items-center md:static md:mx-36 md:gap-10 max-mobile:flex max-mobile:flex-col top-full max-mobile:h-screen w-full -right-full  max-mobile:bg-white/85 absolute p-[1rem] max-mobile:gap-10 nav-items transition ease-in-out duration-300 delay-200">
@@ -45,39 +45,76 @@
      <!-- End Hero Section -->
 
      <!-- Gallery Section -->
-      <section id="gallery" class="flex items-center min-h-screen flex-col mx-auto w-full">
-         <h1 class="text-center text-5xl bg-gradient-to-r from-red-500 to-red-300 text-transparent bg-clip-text font-semibold mb-9">Gallery</h1>
-        <div class="container flex justify-center items-center  px-4 rounded-md ">
-          <div class="bg-gradient-to-br from-red-500 via-red-300 to-red-200 p-12 gap-10 rounded-md grid grid-cols-3 max-mobile:grid-cols-2 max-mobile:w-full  max-mobile:mx-auto max-mobile:columns-2 max-mobile:px-2 ">
-          <div class="bg-white rounded-md ">
-            <figure class="flex flex-col">
-            <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/1.webp" alt="Ferrari Callifornia">
-            <div class="mx-4 my-1 text-md font-semibold flex flex-col flex-nowrap max-mobile:flex-wrap max-mobile:text-sm max-mobile:mx-1">
-            <figcaption>Name: Ferrari 458 Spider</figcaption>
-            <figcaption>Years: 2009-2015</figcaption>
-            <figcaption>Price: $248.037</figcaption>
-            </div>
-            </figure>
-          </div>
-          <div class="bg-white rounded-md ">
-            <figure class="flex flex-col"> 
-              <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/2.webp" alt="Ferrari Callifornia">
-              <div class="mx-4 my-1 text-md font-semibold flex flex-col flex-nowrap max-mobile:flex-wrap max-mobile:text-sm max-mobile:mx-1">
-                      <figcaption>Name: Ferrari F40</figcaption>
-                      <figcaption>Years: 1987-1992</figcaption>
-                      <figcaption>Price: <a href="">Contact</a></figcaption>
-              </div>
-            </figure>
-          </div>
-          <div class="">
-            <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/3.webp" alt="Ferrari Callifornia">
-          </div>
-          <div class="">
-            <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/3.webp" alt="Ferrari Callifornia">
-          </div>
-          </div>
-        </div>
-      </section>
+<section id="gallery" class="relative min-h-screen flex flex-col items-center w-full overflow-hidden">
+  <h1 class="text-center text-5xl bg-gradient-to-r from-red-500 to-red-300 text-transparent bg-clip-text font-semibold mb-9">Gallery</h1>
+  
+  <!-- Tombol Navigasi Kiri -->
+  <button class="prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200">
+    <i data-feather="arrow-left"></i>
+  </button>
+
+  <!-- Container Carousel -->
+  <div class="container flex overflow-x-auto snap-x snap-mandatory px-4 space-x-4 w-full">
+    <!-- Carousel Item -->
+    <div class="snap-center overflow-hidden flex-auto grow-0  shrink-0 w-72 bg-white rounded-md shadow-lg">
+      <figure class="flex flex-col p-4">
+        <img class="rounded-md w-full " src="/assets/Img/Img-Product-Ferrari/1.webp" alt="Ferrari 458 Spider">
+        <figcaption class="mt-4 text-center text-lg font-semibold">
+          Name: Ferrari 458 Spider<br>
+          Years: 2009-2015<br>
+          Price: $248,037
+        </figcaption>
+      </figure>
+    </div>
+    <div class="snap-center overflow-hidden flex-auto grow-0  shrink-0 w-72 bg-white rounded-md shadow-lg">
+      <figure class="flex flex-col p-4">
+        <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/2.webp" alt="Ferrari 458 Spider">
+        <figcaption class="mt-4 text-center text-lg font-semibold">
+          Name: Ferrari 458 Spider<br>
+          Years: 2009-2015<br>
+          Price: $248,037
+        </figcaption>
+      </figure>
+    </div>
+    <div class="snap-center overflow-hidden  flex-auto grow-0 shrink-0 w-72 bg-white rounded-md shadow-lg">
+      <figure class="flex flex-col p-4">
+        <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/3.webp" alt="Ferrari 458 Spider">
+        <figcaption class="mt-4 text-center text-lg font-semibold">
+          Name: Ferrari 458 Spider<br>
+          Years: 2009-2015<br>
+          Price: $248,037
+        </figcaption>
+      </figure>
+    </div>
+    <div class="snap-center overflow-hidden flex-auto grow-0  shrink-0 w-72 bg-white rounded-md shadow-lg">
+      <figure class="flex flex-col p-4">
+        <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/3.webp" alt="Ferrari 458 Spider">
+        <figcaption class="mt-4 text-center text-lg font-semibold">
+          Name: Ferrari 458 Spider<br>
+          Years: 2009-2015<br>
+          Price: $248,037
+        </figcaption>
+      </figure>
+    </div>
+    <div class="snap-center overflow-hidden flex-auto grow-0  shrink-0 w-72 bg-white rounded-md shadow-lg">
+      <figure class="flex flex-col p-4">
+        <img class="rounded-md w-full" src="/assets/Img/Img-Product-Ferrari/3.webp" alt="Ferrari 458 Spider">
+        <figcaption class="mt-4 text-center text-lg font-semibold">
+          Name: Ferrari 458 Spider<br>
+          Years: 2009-2015<br>
+          Price: $248,037
+        </figcaption>
+      </figure>
+    </div>
+      <!-- End Carousel Item -->
+  </div>
+        <!-- End Container Carousel -->
+
+  <!-- Tombol Navigasi Kanan -->
+  <button class="next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200">
+    <i data-feather="arrow-right"></i>
+  </button>
+</section>
      <!-- End Gallery Section -->
 
      <!-- Model Section -->
