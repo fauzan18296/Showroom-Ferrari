@@ -1,0 +1,11 @@
+Algoritma: cardInfo
+{saat tombol yang berupa ikon mata diklik akan muncul sebuah card yang berisi speksifikasi mesin mobil}
+
+Deklarasi:
+cardSection = mengambil kelas uaitu ".card"
+buttonCard = mengambil kelas yaitu ".btn-card"
+closeCard = mengambil kelas yaitu ".close-btn"
+
+Deskripsi:
+1) IF buttonCard terjadi peristiwa tombol klik maka munculkan cardSection
+2) IF cardSection sudah muncul dan kita klik tombol ikon closenya maka cardSection akan hilang
