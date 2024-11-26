@@ -1,7 +1,7 @@
 import '../css/style.css'
 import { carousel } from './logic/carouselGallery'
 import { setupMenu } from './logic/menuBar'
-import { modalBox } from './logic/modelsBox'
+import { modalBox } from './logic/modelsBox1'
 
 // Setup navigasi menubar saat device mobile
 setupMenu()
