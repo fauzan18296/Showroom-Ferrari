@@ -7,7 +7,7 @@ export function setupMenu() {
     });
 
     document.addEventListener("click", (e) => {
-        if (!menuButton.contains(e.currentTarget) && !navItems.contains(e.currentTarget)) {
+        if (!menuButton.contains(e.target) && !navItems.contains(e.target)) {
             navItems.classList.remove("right-0");
         }
     });

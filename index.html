@@ -13,7 +13,7 @@
   <body id="home"  class="font-poppins">
     <!-- Navbar -->
      <div class="navigasi flex w-full py-2 bg-gray-200
-     bg-opacity-20 rounded-lg shadow-xl  backdrop-blur-lg justify-between items-center fixed max-tablets:w-full z-50">
+     bg-opacity-20 rounded-lg shadow-xl  backdrop-blur-lg justify-between items-center fixed max-tablets:w-full z-40">
       <div class="flex mx-20 text-4xl font-extrabold bg-gradient-to-r from-red-500 to-red-200 bg-clip-text text-transparent font-raleway italic max-mobile:mx-5"><a href="#home">Ferrari</a></div>
         <nav class="text-lg font-semibold md:flex md:justify-end md:items-center">
           <div class="md:container md:flex md:justify-end md:items-center md:static md:mx-36 md:gap-10 max-mobile:flex max-mobile:flex-col top-full max-mobile:h-screen w-full -right-full  max-mobile:bg-white/85 absolute p-[1rem] max-mobile:gap-10 nav-items transition ease-in-out duration-300 delay-200">
@@ -184,7 +184,7 @@
         <div class="container gap-3 grid grid-cols-3 max-mobile:flex max-mobile:flex-wrap  relative">
           <!-- Items Models -->
           <div class="px-3 w-full">
-                 <button class="absolute block mx-2 my-2 bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-white rounded-md p-1"><i data-feather="eye"></i></button>
+                 <button class="open-modal-1 absolute block mx-2 my-2 bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-white rounded-md p-1"><i data-feather="eye"></i></button>
             <img class="rounded-md" src="/assets/Img/Img-Product-Ferrari/1.webp" alt="">
             <h2 class="text-center text-lg">Ferrari 458 Spider</h2>
             <button class="bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-slate-100 w-full text-lg rounded-md">Buy Now!</button>
@@ -213,7 +213,7 @@
             <h2 class="text-center text-lg"> Ferrari 458 Italia</h2>
             <button class="bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-slate-100 w-full text-lg rounded-md">Buy Now!</button>
           </div>
-          <div class="px-3 w-full">
+          <div class="px-3 w-full row-end-6">
             <button class="absolute block mx-2 my-2 bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-white rounded-md p-1"><i data-feather="eye"></i></button>
             <img class="rounded-md" src="/assets/Img/Img-Product-Ferrari/7.webp" alt="">
             <h2 class="text-center text-lg">Ferrari 812 Superfast</h2>
@@ -237,7 +237,7 @@
             <h2 class="text-center text-lg">Ferrari Daytona SP3</h2>
             <button class="bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-slate-100 w-full text-lg rounded-md">Buy Now!</button>
           </div>
-          <div class="px-3 w-full row-end-4">
+          <div class="px-3 w-full row-start-6">
             <button class="absolute block mx-2 my-2 bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-white rounded-md p-1"><i data-feather="eye"></i></button>
             <img class="rounded-md" src="/assets/Img/Img-Product-Ferrari/11.webp" alt="">
             <h2 class="text-center text-lg">Ferrari Monza SP1</h2>
@@ -254,6 +254,23 @@
         <!-- End Container Models -->
       </section>
      <!-- End Model Section -->
+
+     <!-- Modal Box 1 -->
+      <section class="modal-1 bg-black/40 bg-opacity-10 backdrop-blur-sm h-full overflow-auto w-full flex justify-center items-center fixed top-0 left-0">
+        <!-- Container Modal Box 1 -->
+        <div class="bg-white container flex items-center h-2/3 w-full rounded-md relative flex-col">
+           <h1 class="text-xl font-semibold">Ferrari 458 Spider (2010)</h1>
+          <!-- Item Model Box 1 -->
+           <button class="close-modal-1 absolute right-0 top-0 w-11 h-11"><i data-feather="x" class="w-10 h-10 text-red-400 font-semibold "></i></button>
+           <img class="w-5/12 mx-3 rounded-md" src="./assets/Img/Img-Product-Ferrari/1.webp" alt="">
+           <p class="text-center text-lg"><span class="font-semibold">Mesin:</span> V8 4.5L Naturally Aspirated<br />
+<span class="font-semibold">Performa:</span> Tenaga 570 hp, kecepatan maksimum sekitar 320 km/h<br />
+<span class="font-semibold">Interior:</span> Mirip dengan 458 Italia, namun dengan atap terbuka yang memberikan sensasi berkendara yang lebih terbuka.</p>
+          <!-- End Item Modal Box 1 -->
+        </div>
+         <!-- End Container Modal Box 1 -->
+      </section>
+     <!-- End Modal Box 1 -->
 
 
       <!-- Main JS -->
