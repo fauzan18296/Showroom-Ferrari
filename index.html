@@ -184,19 +184,19 @@
         <div class="container gap-3 grid grid-cols-3 max-mobile:flex max-mobile:flex-wrap  relative">
           <!-- Items Models -->
           <div class="px-3 w-full">
-                 <button class="open-modal-1 absolute block mx-2 my-2 bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-white rounded-md p-1"><i data-feather="eye"></i></button>
+                 <button id="open-modal-1" class="absolute block mx-2 my-2 bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-white rounded-md p-1"><i data-feather="eye"></i></button>
             <img class="rounded-md" src="/assets/Img/Img-Product-Ferrari/1.webp" alt="">
             <h2 class="text-center text-lg">Ferrari 458 Spider</h2>
             <button class="bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-slate-100 w-full text-lg rounded-md">Buy Now!</button>
             </div>
           <div class="px-3 w-full">
-        <button class="absolute block mx-2 my-2 bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-white rounded-md p-1"><i data-feather="eye"></i></button>
+        <button id="open-modal-2" class="absolute block mx-2 my-2 bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-white rounded-md p-1"><i data-feather="eye"></i></button>
             <img class="rounded-md" src="/assets/Img/Img-Product-Ferrari/2.webp" alt="">
             <h2 class="text-center text-lg">Ferrari F40</h2>
             <button class="bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-slate-100 w-full text-lg rounded-md">Buy Now!</button>
           </div>
           <div class="px-3 w-full row-end-5">
-            <button class="absolute block mx-2 my-2 bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-white rounded-md p-1"><i data-feather="eye"></i></button>
+            <button id="open-modal-3" class="absolute block mx-2 my-2 bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-white rounded-md p-1"><i data-feather="eye"></i></button>
             <img class="rounded-md" src="/assets/Img/Img-Product-Ferrari/4.webp" alt="">
             <h2 class="text-center text-lg"> Ferrari 250 GTO</h2>
             <button class="bg-gradient-to-br from-red-500 via-red-400 to-red-300 text-slate-100 w-full text-lg rounded-md">Buy Now!</button>
@@ -256,14 +256,14 @@
      <!-- End Model Section -->
 
      <!-- Modal Box 1 -->
-      <section class="modal-1 bg-black/40 bg-opacity-10 backdrop-blur-sm h-full overflow-auto w-full flex justify-center items-center fixed top-0 left-0">
+      <section id="modal-1" class="bg-black/40 bg-opacity-10 backdrop-blur-sm h-full overflow-auto w-full flex justify-center items-center fixed top-0 left-0">
         <!-- Container Modal Box 1 -->
-        <div class="bg-white container flex items-center h-2/3 w-full rounded-md relative flex-col">
+        <div class="bg-white container flex justify-center items-center h-2/3 max-mobile:h-3/6 w-full rounded-md relative flex-col">
            <h1 class="text-xl font-semibold">Ferrari 458 Spider (2010)</h1>
           <!-- Item Model Box 1 -->
-           <button class="close-modal-1 absolute right-0 top-0 w-11 h-11"><i data-feather="x" class="w-10 h-10 text-red-400 font-semibold "></i></button>
-           <img class="w-5/12 mx-3 rounded-md" src="./assets/Img/Img-Product-Ferrari/1.webp" alt="">
-           <p class="text-center text-lg"><span class="font-semibold">Mesin:</span> V8 4.5L Naturally Aspirated<br />
+           <button id="close-modal-1" class="absolute right-0 top-0 w-11 h-11"><i data-feather="x" class="w-10 h-10 text-red-400 font-semibold "></i></button>
+           <img class="w-5/12 mx-3 rounded-md max-mobile:w-3/4" src="./assets/Img/Img-Product-Ferrari/1.webp" alt="">
+           <p class="text-center text-lg  mx-2"><span class="font-semibold">Mesin:</span> V8 4.5L Naturally Aspirated<br />
 <span class="font-semibold">Performa:</span> Tenaga 570 hp, kecepatan maksimum sekitar 320 km/h<br />
 <span class="font-semibold">Interior:</span> Mirip dengan 458 Italia, namun dengan atap terbuka yang memberikan sensasi berkendara yang lebih terbuka.</p>
           <!-- End Item Modal Box 1 -->
@@ -272,7 +272,25 @@
       </section>
      <!-- End Modal Box 1 -->
 
+      <!-- Modal Box 2 -->
+      <section id="modal-2" class="bg-black/40 bg-opacity-10 backdrop-blur-sm h-full overflow-auto w-full flex justify-center items-center fixed top-0 left-0">
+        <!-- Container Modal Box 2 -->
+        <div class="bg-white container flex items-center justify-center h-2/3 max-mobile:h-3/6 w-full rounded-md relative flex-col">
+           <h1 class="text-xl font-semibold">Ferrari F40 (1987)</h1>
+          <!-- Item Model Box 2 -->
+           <button id="close-modal-2" class=" absolute right-0 top-0 w-11 h-11"><i data-feather="x" class="w-10 h-10 text-red-400 font-semibold "></i></button>
+           <img class="w-5/12 max-mobile:w-3/4 mx-3 rounded-md" src="./assets/Img/Img-Product-Ferrari/2.webp" alt="">
+           <p class="text-center text-lg mx-2"><span class="font-semibold">Mesin:</span> V8 2.9L Twin-Turbocharged<br />
+<span class="font-semibold">Performa:</span> Tenaga 478 hp, kecepatan maksimum sekitar 324 km/h<br />
+<span class="font-semibold">Interior:</span> Spartan dan fokus pada performa, dengan bahan interior yang ringan.</p>
+          <!-- End Item Modal Box 2 -->
+        </div>
+         <!-- End Container Modal Box 2 -->
+      </section>
+     <!-- End Modal Box 2 -->
 
+
+    
       <!-- Main JS -->
     <script type="module" src="/src/js/app.js"></script>
     <!-- Feather Icons -->
