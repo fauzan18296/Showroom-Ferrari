@@ -12,7 +12,7 @@ export function modalBox1() {
   // Lalu buat modalnya yang awalnya terlihat menjadi tersembunyi lagi disaat klik tombol silang/X
    closeBtn1.addEventListener("click", () => {
      modal1.classList.add("invisible")
-      })
+   })
 }
 
 export function modalBox2() {

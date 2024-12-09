@@ -17,19 +17,6 @@ export default {
       },
     },
   },
-  plugins: [
-    function ({ addUtilities }) {
-      addUtilities({
-        '.no-scrollbar': {
-          /* menyembunyikan scrollbar */
-          '-ms-overflow-style': 'none', // untuk IE dan Edge
-          'scrollbar-width': 'none', // untuk Firefox
-          '&::-webkit-scrollbar': {
-            display: 'none', // untuk Chrome, Safari, dan Opera
-          },
-        },
-      })
-    },
-  ],
+  plugins: [],
 }
 
